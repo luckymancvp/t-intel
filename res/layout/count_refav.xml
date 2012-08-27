@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_texture" >
+
+	<LinearLayout
+	    android:background="@drawable/listviewframe"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+	    android:layout_margin="10dp"
+	    >    
+	    <LinearLayout
+	    android:id="@+id/showRetweets"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
+	    android:orientation="horizontal" >
+	
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="0.9"
+		        android:text="Retweets" />
+		
+		    <TextView
+		        android:id="@+id/countReTxt"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:gravity="right"
+		        android:layout_weight="0.26"
+		        android:text="100" />
+		
+		    <ImageView
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="0.05"
+		        android:src="@drawable/ic_chevron" />
+		</LinearLayout>
+	    
+	    <View
+	        android:layout_width="fill_parent"
+	        android:layout_height="1dp"
+	        android:background="#E7E7E7" />
+	    
+		<LinearLayout
+	    android:id="@+id/showFavorites"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="10dp"
+	    android:orientation="horizontal" >
+	
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="0.9"
+		        android:text="Favorites" />
+		
+		    <TextView
+		        android:id="@+id/countFavTxt"
+		        android:gravity="right"
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="0.26"
+		        android:text="100" />
+		
+		    <ImageView
+		        android:layout_width="0dp"
+		        android:layout_height="wrap_content"
+		        android:layout_weight="0.05"
+		        android:src="@drawable/ic_chevron" />
+		
+		</LinearLayout>
+	</LinearLayout>		
+</LinearLayout>
